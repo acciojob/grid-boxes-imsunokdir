@@ -6,10 +6,9 @@
 	  <style>
 		  #grid{
 			  display:grid;
-			  grid-template-rows:repeat(5,1fr);
-			  grid-template-columns:repeat(4,1fr);
+			  grid-template-rows:124px 124px 124px 124px 124px;
+			  grid-template-columns:242.5px 242.5px 242.5px 242.5px;
 			  gap:5px;
-			  height:80vh;
 		  }
 		  div{
 			  background-color:green;
@@ -18,19 +17,19 @@
 			  color:white;
 		  }
 		  .one{
-			  grid-column: 1 / 5
+			  grid-column: span 4 / auto
 		  }
 		  .two{
-			  grid-row:2/6
+			  grid-row:span 4 / auto
 		  }
 		  .four{
-			  grid-column:span 2;
+			  grid-column:span 2 / auto;
 		  }
 		  .five{
-			  grid-column:span 2;
+			  grid-column:span 2 / auto;
 		  }
 		  .ten{
-			  grid-column:span 3;
+			  grid-column:span 3/auto;
 		  }
 	  </style>
   </head>
